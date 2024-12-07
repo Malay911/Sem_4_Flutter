@@ -1,9 +1,6 @@
 import 'dart:io';
 
 void main(){
-  stdout.write("you have to enter a number to to be calculated i.e if "
-      "number is +ve and even than added or number is -ve and odd then add and to end the game enter 0");
-  print(" ");
   stdout.write("Would you like to start calculation(y/n) : ");
   String input = stdin.readLineSync()!;
   print(" ");
