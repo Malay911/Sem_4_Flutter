@@ -8,7 +8,6 @@ void main(){
   for(int i in nums){
     remove_duplicate.add(i);
   }
-
   for(int j in remove_duplicate){
     result.add(j);
   }
