@@ -16,6 +16,7 @@ void main(){
     int nums2 = int.parse(stdin.readLineSync()!);
     n2.add(nums2);
   }
+  
   List<int> common = [];
 
   for(int i = 0;i<n1.length;i++){
