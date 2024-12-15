@@ -3,7 +3,6 @@ import 'dart:io';
 void main(){
 
   List<Map<String,dynamic>> phonebook = [
-
     {
 
       'Name' : 'abc',
@@ -18,7 +17,6 @@ void main(){
       'Email' : 'xyz@gmail.com'
 
     }
-
   ];
 
   print(phonebook);
