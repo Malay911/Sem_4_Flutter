@@ -57,7 +57,6 @@ class _DiceRollScreenState extends State<DiceRollScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            // Button to Roll Dice
             ElevatedButton(
               onPressed: rollDice,
               child: const Text(
