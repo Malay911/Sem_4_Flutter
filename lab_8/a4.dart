@@ -57,7 +57,7 @@ class _Lab8_4State extends State<Lab8_4> {
             ),
             const SizedBox(height: 20),
             Container(
-              height: 400, // Set a fixed height for the image and text container
+              height: 400,
               child: Stack(
                 fit: StackFit.expand,
                 children: [
