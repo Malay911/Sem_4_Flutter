@@ -45,6 +45,7 @@ class _FormValidationState extends State<FormValidation> {
                   },
                 ),
                 const SizedBox(height: 10),
+                
                 TextFormField(
                   controller: passwordController,
                   obscureText: isObscure,
@@ -72,6 +73,7 @@ class _FormValidationState extends State<FormValidation> {
                   },
                 ),
                 const SizedBox(height: 10),
+              
                 ElevatedButton(
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
