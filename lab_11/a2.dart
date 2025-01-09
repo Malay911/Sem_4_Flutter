@@ -30,7 +30,9 @@ class MyApp extends StatelessWidget {
                   SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
               itemBuilder: (context, index) {
                 return Container(child: Image.network(images[index],fit: BoxFit.fitHeight,),);
-              })),
+              }
+          )
+      ),
     );
   }
 }
