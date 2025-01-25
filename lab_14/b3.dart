@@ -62,7 +62,6 @@ class _BirthdayCardFormState extends State<BirthdayCardForm> {
     } else {
       suffix = 'th';
     }
-
     setState(() {
       age = '$ageNum$suffix';
     });
