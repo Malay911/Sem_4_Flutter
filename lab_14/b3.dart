@@ -142,6 +142,7 @@ class BirthdayCard extends StatelessWidget {
       appBar: AppBar(
         title: Text('Your Birthday Card'),
       ),
+
       body: Container(
         child: Center(
           child: Stack(
