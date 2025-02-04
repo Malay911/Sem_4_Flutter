@@ -45,7 +45,6 @@ class _TodoInsertScreenState extends State<TodoInsertScreen> {
           key: _formKey,
           child: Column(
             children: [
-              // Task name field
               TextFormField(
                 controller: _taskNameController,
                 decoration: InputDecoration(
@@ -60,7 +59,6 @@ class _TodoInsertScreenState extends State<TodoInsertScreen> {
                 },
               ),
               SizedBox(height: 10),
-              // Description field
               TextFormField(
                 controller: _descriptionController,
                 decoration: InputDecoration(
@@ -75,7 +73,6 @@ class _TodoInsertScreenState extends State<TodoInsertScreen> {
                 },
               ),
               SizedBox(height: 10),
-              // Due date field
               TextFormField(
                 controller: _dueDateController,
                 decoration: InputDecoration(
@@ -90,7 +87,6 @@ class _TodoInsertScreenState extends State<TodoInsertScreen> {
                 },
               ),
               SizedBox(height: 20),
-              // Add Task button
               ElevatedButton(
                 onPressed: _insertTask,
                 child: Text('Add Task'),
