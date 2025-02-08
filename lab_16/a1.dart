@@ -102,9 +102,7 @@ class _TodoInsertScreenState extends State<TodoInsertScreen> {
       String taskName = _taskNameController.text;
       String description = _descriptionController.text;
       String dueDate = _dueDateController.text;
-
       await myDatabase.insertTask(taskName, description, dueDate, 1);
-
       showDialog(
         context: context,
         builder: (BuildContext context) {
