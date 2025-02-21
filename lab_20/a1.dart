@@ -80,7 +80,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-// User Model Class
 class User {
   final int id;
   final String name;
@@ -94,7 +93,6 @@ class User {
     required this.phone,
   });
 
-  // Factory constructor to parse JSON into User object
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       id: json['id'],
@@ -105,13 +103,11 @@ class User {
   }
 }
 
-// Function to fetch a single user by ID and query parameter
 Future<User> fetchUser(int id, bool extraInfo) async {
   final response = await http.get(Uri.parse(
       'https://jsonplaceholder.typicode.com/users/$id?extraInfo=$extraInfo'));
 
   if (response.statusCode == 200) {
-    // If the response is successful, parse the JSON data
     return User.fromJson(json.decode(response.body));
   } else {
     throw Exception('Failed to load user');
@@ -126,7 +122,7 @@ class UserListPage extends StatelessWidget {
         title: Text('User List'),
       ),
       body: ListView.builder(
-        itemCount: 10, // Only show a few users for demonstration
+        itemCount: 10,
         itemBuilder: (context, index) {
           return Card(
             margin: EdgeInsets.all(10),
@@ -134,7 +130,6 @@ class UserListPage extends StatelessWidget {
               title: Text('User $index'),
               subtitle: Text('user$index@example.com'),
               onTap: () {
-                // Pass user ID and query parameter to the next page
                 Navigator.push(
                   context,
                   MaterialPageRoute(
