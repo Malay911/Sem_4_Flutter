@@ -10,7 +10,6 @@ class Post {
 
   Post({required this.id, required this.title, required this.body, required this.userId});
 
-  // Factory method to convert JSON to Post model
   factory Post.fromJson(Map<String, dynamic> json) {
     return Post(
       id: json['id'],
