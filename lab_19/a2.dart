@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter JSON Parsing Example',
+      title: 'Flutter JSON Parsing',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
