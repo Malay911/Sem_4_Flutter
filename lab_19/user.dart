@@ -3,7 +3,7 @@ class User {
   String name;
   String email;
   Address address;
-
+  
   User({
     required this.id,
     required this.name,
@@ -34,7 +34,6 @@ class Address {
   String street;
   String city;
   String zip;
-
   Address({
     required this.street,
     required this.city,
