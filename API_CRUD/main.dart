@@ -20,7 +20,7 @@ class UserApp extends StatelessWidget {
 
 class User {
   final String id, name, city, age;
-
+  
   User(
       {required this.id,
         required this.name,
